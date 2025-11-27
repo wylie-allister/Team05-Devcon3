@@ -17,10 +17,18 @@ public class GolfBallCollisions : MonoBehaviour
     {
         
     }
-    private void OnCollisionEnter(Collision collision)
+    /* private void OnCollisionEnter(Collision collision)
+     {
+         //Debug.Log(collision.gameObject.tag);
+         if(collision.collider.tag == "Hole")
+         {
+             winner.SetActive(true);
+         }
+     } */
+
+    private void OnTriggerEnter(Collider other)
     {
-        //Debug.Log(collision.gameObject.tag);
-        if(collision.collider.tag == "Hole")
+        if (other.gameObject.tag == "Hole")
         {
             winner.SetActive(true);
         }
