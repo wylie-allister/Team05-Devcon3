@@ -10,6 +10,8 @@ public class SelectMap : MonoBehaviour
     public Button mars;
     public Button europa;
     bool isLoadingMoon = true;
+    bool isLoadingMars = true;
+    bool isLoadingEuropa = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,8 @@ public class SelectMap : MonoBehaviour
     {
 
         moon.onClick.AddListener(MoonClick);
+        mars.onClick.AddListener(MarsClick);
+        europa.onClick.AddListener(EuropaClick);
         
     }
 
@@ -30,6 +34,23 @@ public class SelectMap : MonoBehaviour
         {
             SceneManager.LoadScene("MoonMap");
             isLoadingMoon = false;
+        }
+    }
+
+    public void MarsClick()
+    {
+        if (isLoadingMars)
+        {
+            SceneManager.LoadScene("MarsMap");
+            isLoadingMars = false;
+        }
+    }
+    public void EuropaClick()
+    {
+        if (isLoadingEuropa)
+        {
+            SceneManager.LoadScene("EuropaMap");
+            isLoadingEuropa = false;
         }
     }
 }
