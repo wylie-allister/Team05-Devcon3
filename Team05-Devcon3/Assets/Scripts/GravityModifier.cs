@@ -24,6 +24,10 @@ public class GravityModifier : MonoBehaviour
         {
             Physics.gravity = new Vector3(0, -3.73f, 0);
         }
+        if (SceneManager.GetActiveScene().name == "EuropaMap")
+        {
+            Physics.gravity = new Vector3(0, -1.31f, 0);
+        }
     }
 
     
