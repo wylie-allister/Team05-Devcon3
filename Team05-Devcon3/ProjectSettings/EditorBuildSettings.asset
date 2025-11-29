@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MarsMap.unity
+    guid: 0cd176077f209264babefa3a3af823b1
+  - enabled: 1
+    path: Assets/Scenes/MoonMap.unity
+    guid: 02e11a82849c6164e97ce3641b885059
+  - enabled: 1
+    path: Assets/Scenes/StartScreen.unity
+    guid: 6d6204f87c869b34f92c66b02026970c
   m_configObjects: {}

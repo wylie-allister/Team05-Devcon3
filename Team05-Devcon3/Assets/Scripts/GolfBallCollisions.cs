@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GolfBallCollisions : MonoBehaviour
 {
@@ -9,13 +10,15 @@ public class GolfBallCollisions : MonoBehaviour
     public GameObject winner;
     void Start()
     {
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKey(KeyCode.P))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
     /* private void OnCollisionEnter(Collision collision)
      {
@@ -32,5 +35,11 @@ public class GolfBallCollisions : MonoBehaviour
         {
             winner.SetActive(true);
         }
+
+        if (other.gameObject.tag == "Death")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
+
 }
