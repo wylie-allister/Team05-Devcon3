@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GravityModifier : MonoBehaviour
 {
@@ -13,7 +14,20 @@ public class GravityModifier : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Physics.gravity = new Vector3(0, -1.62f, 0);
+
+        if (SceneManager.GetActiveScene().name == "MoonMap")
+        {
+            Physics.gravity = new Vector3(0, -1.62f, 0);
+        }
+
+        if (SceneManager.GetActiveScene().name == "MarsMap")
+        {
+            Physics.gravity = new Vector3(0, -3.73f, 0);
+        }
+        if (SceneManager.GetActiveScene().name == "EuropaMap")
+        {
+            Physics.gravity = new Vector3(0, -1.31f, 0);
+        }
     }
 
     
