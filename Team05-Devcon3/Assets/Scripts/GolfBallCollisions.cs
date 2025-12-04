@@ -34,12 +34,20 @@ public class GolfBallCollisions : MonoBehaviour
         if (other.gameObject.tag == "Hole")
         {
             winner.SetActive(true);
+            StartCoroutine(MenuTimer());
         }
 
         if (other.gameObject.tag == "Death")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+    }
+
+    private IEnumerator MenuTimer()
+    {
+        yield return new WaitForSeconds(3.0f);
+        SceneManager.LoadScene("StartScreen");
+        winner.SetActive(false);
     }
 
 }
