@@ -5,7 +5,7 @@ We are creating a physics-driven golf prototype where each planet offers a uniqu
 
 ![][image1]![][image2]
 
-#CORE GAMEPLAY LOOP:
+# CORE GAMEPLAY LOOP:
 
 \-Choose a planet (Moon, Mars, Europa)
 
@@ -23,7 +23,7 @@ We are creating a physics-driven golf prototype where each planet offers a uniqu
 
 **Player Goal:** To get through difficult golf games on different planets with varying gravity systems.
 
-**Visual Style**: 3D, 
+**Visual Style**: 3D 
 
 **Engine:** Unity
 
@@ -37,7 +37,7 @@ We are creating a physics-driven golf prototype where each planet offers a uniqu
 
 \-Planet variety
 
-\-Dicovery and mastery
+\-Discovery and mastery
 
 **Constraints (for prototype):**
 
@@ -72,13 +72,14 @@ Our group's objective statement is to test whether a planetary golf game with di
 # Detail design rationale. What kind of experience do you envision? How is it innovative or experimental?  
   The design of our game aims to immerse players into a playful, interplanetary golf experience where every planet feels like its own strange challenge and a new feeling from the last planet. By keeping our core system simple (aim, hit, adjust), we make the game easy to pick up while still leaving lots of space for depth as players learn and adjust to each planet's gravity and how it affects their golfing. The innovative aspect of our design comes from seeing how much variety and discovery can emerge from changing just one variable, gravity. Instead of overwhelming players with complicated systems and mechanics we want to test whether this single twist on a traditional game of gold can create a fun, unique experience. Our rationale is to explore whether this minimal but impactful change is enough to deliver a new, engaging experience.  
     
-  # Metric research and references: The main metrics that we referenced were the gravity of different planets, specifically Earth's Moon, Mars, and Europa, one of Jupiter's moons, and the mass of a standard golf ball. Each respective planet was set to their appropriate surface gravity, 1.62 for the moon, 3.7 for Mars, and 1.3 for Europa. The legal mass limit of a golf ball is 1.62 oz, or 45.93g, which was rounded up for simplification.  
+# Metric research and references: 
+The main metrics that we referenced were the gravity of different planets, specifically Earth's Moon, Mars, and Europa, one of Jupiter's moons, and the mass of a standard golf ball. Each respective planet was set to their appropriate surface gravity, 1.62 for the moon, 3.7 for Mars, and 1.3 for Europa. The legal mass limit of a golf ball is 1.62 oz, or 45.93g, which was rounded up for simplification.
   The secondary metric we used was the friction of ice. Our original goal was to make it as accurate as possible, but mistyped the variables as 0.3 dynamic friction and 0.5 static friction instead of 0.03 and 0.05. We decided it would be best to keep these numbers as it was still accurate when ice reaches a higher temperature and it still felt enough like ice to be believable.  
     
   # Future expansion ideas: 
   \-Add more levels per planet  
   \-Add more planets   
-  \-Customizeable golf balls for completing levels  
+  \-Customizable golf balls for completing levels  
   \-Music  
   \-Skybox to match where the planet is in space  
   \-Wormhole or orbital mechanics  
@@ -108,7 +109,7 @@ Considered fixes/implementations in *italics*
 
 “has a very entertaining and distinctive space-themed mini-golf prototype that has a solid core mechanic. The low-gravity twist adds personality and the ball is very enjoyable to watch it fly. The aiming system is not hard to use, yet *very little movements send the ball too far*, and the full power sends the ball off the screen altogether. There are no escape points on corners and walls, and the camera control was not immediately apparent. The inclusion of a **reset button** would eliminate frustration a lot of times when I got stuck or lost. All in all, this is a solid starting point-- with *better power scaling, sharper aiming, and an even more refined course*, it can be made a superior arcade-like mini-golf game.”
 
-**SOURCES CITES:**
+**SOURCES CITED:**
 
 [https://www.deviantart.com/askaniy/art/Europa-Texture-Map-20K-769790967](https://www.deviantart.com/askaniy/art/Europa-Texture-Map-20K-769790967) [https://opengameart.org/content/seamless-space-rocks-textures-pack-512px-mars-ch16png](https://opengameart.org/content/seamless-space-rocks-textures-pack-512px-mars-ch16png) [https://ui.adsabs.harvard.edu/abs/2008PhyEd..43..392M/abstract](https://ui.adsabs.harvard.edu/abs/2008PhyEd..43..392M/abstract)
 
